@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.timeline-container {
+  height: 100%;
+}
+
+.vis-group-level-0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
