@@ -1,6 +1,6 @@
 import React from "react"
 import {TimelineComponent} from "../components/"
-import {SeachComponent} from "../components/"
+import {SeachComponent, SummaryComponent} from "../components/"
 import {options} from "../helper/options"
 import useSearch from "../hooks/useSearch"
 
@@ -18,15 +18,21 @@ export function TimelineContainer() {
 
   return (
     <div>
-      <SeachComponent
-        type="text"
-        name="name"
-        placeholder="Quick Seach"
-        value={search}
-        onChange={handleChange}
-      >
-        Search for trucks or orders
-      </SeachComponent>
+      
+        <SummaryComponent.Container>
+          <SummaryComponent>🚚: {groups.length}</SummaryComponent>
+          <SummaryComponent>📦: {items.length} </SummaryComponent>
+          <SummaryComponent.Text>Search for trucks or orders</SummaryComponent.Text>
+          <SeachComponent
+            type="text"
+            name="name"
+            placeholder="Quick Seach"
+            value={search}
+            onChange={handleChange}
+          />
+        </SummaryComponent.Container>
+        
+        
       {timelineTable}
     </div>
   )

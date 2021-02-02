@@ -1,6 +1,10 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: sans-serif;
-  text-align: center;
+  width: 98%;
+  margin: auto;
 }
 
 .timeline-container {
