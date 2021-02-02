@@ -1,8 +1,8 @@
 # Truck filter for assesment
 
 Implemented 
-Search for truck
-Search for orders
+* Search for truck
+* Search for orders
 
 # Demo available here
 https://truck-filter.vercel.app/
