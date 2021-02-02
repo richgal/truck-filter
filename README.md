@@ -4,6 +4,11 @@ Implemented
 * Search for truck
 * Search for orders
 
+# Tools used
+* React
+* styled-components
+* vis.js vis-timeline
+
 # Demo available here
 https://truck-filter.vercel.app/
 
