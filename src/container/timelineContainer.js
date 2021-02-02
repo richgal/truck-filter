@@ -10,7 +10,7 @@ export function TimelineContainer() {
   const timelineTable =
     groups.length === 0 ? (
       <TimelineComponent.NoTruck>
-        No trucks or orders to dislay
+        No trucks or orders to display
       </TimelineComponent.NoTruck>
     ) : (
       <TimelineComponent options={options} groups={groups} items={items} />
