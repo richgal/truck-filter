@@ -30,8 +30,7 @@ export default function useSearch() {
     })
 
     setItems(filteredItems)
-
-    filteredGroup.length === 0 ? setGroups([]) : setGroups(filteredGroup)
+    setGroups(filteredGroup)
   }, [search])
 
   function handleChange(event) {
